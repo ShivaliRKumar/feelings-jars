@@ -168,7 +168,7 @@ body {
   top: 16px; left: 14px; right: 14px; bottom: 14px;
   display: flex;
   flex-wrap: wrap-reverse;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   gap: 7px;
   overflow: hidden;
