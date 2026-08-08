@@ -15,7 +15,7 @@ export default function Jar({ jarKey, entries, palette, accent, tilt, onAdd, onV
         <div className="jar-shine" />
         <div className="jar-label-pin" />
         <div className="jar-label" style={{ background: oklch(accent) }}>
-          {JAR_LABEL[jarKey]}
+          {JAR_LABEL[jarKey]} ({entries.length})
         </div>
         <div className="jar-balls">
           {sorted.length === 0 && <p className="jar-empty">{JAR_EMPTY[jarKey]}</p>}
