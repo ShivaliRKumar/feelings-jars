@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Only signed-in users (i.e. the two accounts you create for
+    // yourself and Vrushab) can read or write anything at all.
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
