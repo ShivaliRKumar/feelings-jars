@@ -267,8 +267,8 @@ body {
   background: rgba(212, 90, 90, 0.35);
 }
 .piggy-ear {
-  position: absolute; top: 4px;
-  width: 12px; height: 12px;
+  position: absolute; top: 12px;
+  width: 12px; height: 14px;
   background: #f0a9a0;
   border: 2px solid var(--ink);
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
