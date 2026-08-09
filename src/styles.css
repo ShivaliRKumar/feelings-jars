@@ -242,50 +242,58 @@ body {
   border-radius: 2px;
 }
 .piggy-top { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-.piggy-icon { width: 78px; height: 62px; position: relative; flex-shrink: 0; }
+.piggy-icon { width: 84px; height: 66px; position: relative; flex-shrink: 0; }
 .piggy-body {
-  position: absolute; inset: 10px 0 0 0;
+  position: absolute; top: 18px; left: 2px;
+  width: 60px; height: 38px;
   background: #f0a9a0;
   border: 2.5px solid var(--ink);
-  border-radius: 40% 40% 45% 45%;
+  border-radius: 50% 50% 45% 45%;
 }
 .piggy-snout {
-  position: absolute; right: -6px; top: 24px;
-  width: 20px; height: 16px;
+  position: absolute; top: 28px; left: 54px;
+  width: 20px; height: 17px;
   background: #f7bdb5;
-  border: 2px solid var(--ink);
-  border-radius: 8px;
+  border: 2.5px solid var(--ink);
+  border-radius: 45%;
 }
+.piggy-nostril {
+  position: absolute; top: 6px;
+  width: 3px; height: 4px; border-radius: 50%;
+  background: var(--ink);
+}
+.piggy-nostril.n1 { left: 4px; }
+.piggy-nostril.n2 { left: 11px; }
 .piggy-eye {
-  position: absolute; right: 10px; top: 16px;
-  width: 5px; height: 5px; border-radius: 50%;
+  position: absolute; top: 22px; left: 45px;
+  width: 4px; height: 4px; border-radius: 50%;
   background: var(--ink);
 }
 .piggy-blush {
-  position: absolute; right: 18px; top: 26px;
-  width: 8px; height: 6px; border-radius: 50%;
+  position: absolute; top: 34px; left: 12px;
+  width: 9px; height: 6px; border-radius: 50%;
   background: rgba(212, 90, 90, 0.35);
 }
 .piggy-ear {
-  position: absolute; top: 12px;
-  width: 12px; height: 14px;
+  position: absolute; top: 6px;
+  width: 13px; height: 13px;
   background: #f0a9a0;
-  border: 2px solid var(--ink);
-  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  border: 2.5px solid var(--ink);
+  border-radius: 50% 10% 50% 10%;
 }
-.piggy-ear.left { left: 48px; }
-.piggy-ear.right { left: 62px; }
+.piggy-ear.left { left: 18px; transform: rotate(-25deg); }
+.piggy-ear.right { left: 34px; transform: rotate(-5deg); }
 .piggy-leg {
-  position: absolute; bottom: -6px;
+  position: absolute; bottom: 2px;
   width: 8px; height: 12px;
   background: #f0a9a0;
-  border: 2px solid var(--ink);
+  border: 2.5px solid var(--ink);
   border-radius: 0 0 4px 4px;
 }
 .piggy-leg.l1 { left: 12px; }
-.piggy-leg.l2 { left: 44px; }
+.piggy-leg.l2 { left: 42px; }
 .piggy-slot {
-  position: absolute; top: 4px; left: 50%;
+  position: absolute; top: 8px; left: 50%;
   transform: translateX(-50%);
   width: 20px; height: 3px;
   background: var(--ink);
