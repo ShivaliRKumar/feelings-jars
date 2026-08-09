@@ -273,8 +273,8 @@ body {
   border: 2px solid var(--ink);
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
 }
-.piggy-ear.left { left: 6px; }
-.piggy-ear.right { left: 22px; }
+.piggy-ear.left { left: 48px; }
+.piggy-ear.right { left: 62px; }
 .piggy-leg {
   position: absolute; bottom: -6px;
   width: 8px; height: 12px;
