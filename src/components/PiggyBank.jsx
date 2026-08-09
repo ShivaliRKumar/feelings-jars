@@ -8,18 +8,18 @@ export default function PiggyBank({ totalEUR, currency, onToggleCurrency, onAdd,
     <div className="piggy-card">
       <div className="washi-tape" />
       <div className="piggy-top">
-        <div className="piggy-icon">
+       <div className="piggy-icon">
           <div className="piggy-ear left" />
           <div className="piggy-ear right" />
           <div className="piggy-body">
             <div className="piggy-slot" />
-            <div className="piggy-eye" />
-            <div className="piggy-blush" />
           </div>
           <div className="piggy-snout">
-            <div style={{ position: 'absolute', top: 4, left: 3, width: 2, height: 2, borderRadius: '50%', background: '#3d2c22' }} />
-            <div style={{ position: 'absolute', top: 4, left: 10, width: 2, height: 2, borderRadius: '50%', background: '#3d2c22' }} />
+            <div className="piggy-nostril n1" />
+            <div className="piggy-nostril n2" />
           </div>
+          <div className="piggy-eye" />
+          <div className="piggy-blush" />
           <div className="piggy-leg l1" />
           <div className="piggy-leg l2" />
         </div>
